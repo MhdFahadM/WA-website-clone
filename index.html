@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Responsive Web Design</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- <nav class="navbar fixed-top" style="background-color: #fcf5eba8; backdrop-filter: blur(12px);">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" title="download_icon">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="./">Offcanvas navbar</a>
+        <div class="btn btn-sm rounded-circle border border-2 border-dark">
+          <i class="bi bi-chevron-bar-down"></i>
+        </div>
+
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          </div>
+          <div class="offcanvas-body bg-white">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another
+                      action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else
+                      here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg fixed-top border border-muted border-bottom-1"
+      style="background-color: #fcf5ebbe; backdrop-filter: blur(8px);">
+      <div class="container-fluid px-4 ">
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" title="menu_icon">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="assets/images/logo.svg" alt="WhatsApp Logo" style="height: 30px;"></a>
+
+        <!-- btn sm -->
+        <div class="d-lg-none d-flex gap-3 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-sm border-1 border-black rounded-circle px-2 py-1"><i
+              class="bi bi-chevron-bar-down"></i></a>
+        </div>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-4 text-center">
+              <li class="nav-item dropdown text-black">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Messaging</a></li>
+                  <li><a class="dropdown-item" href="#">Voice & Video</a></li>
+                  <li><a class="dropdown-item" href="#">Groups</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Help
+                  Center</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">For
+                  Business</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Apps</a></li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-3 mt-3 mt-lg-0">
+              <!-- <a href="#" class="btn btn-outline-dark rounded-pill px-4">
+                Log in <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="btn btn-success rounded-pill px-4">
+                Download <i class="bi bi-chevron-bar-down"></i>
+              </a> -->
+              <button class="btn btn-lg border border-black btn-white ms-md-3 mt-2 mt-md-0" type="button">
+                Log in <i class="bi bi-chevron-right"></i>
+              </button>
+              <button class="btn btn-lg border border-black" type="button">
+                Download <i class="bi bi-chevron-bar-down"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="container-fluid px-3">
+      <div class="hero-img  p-5 d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
+
+          <!-- Image Column -->
+          <div class="col-12 col-md-6  order-1 order-md-2 d-none d-sm-flex justify-content-center align-items-center flex-column">
+            <!-- md Image -->
+            <img src="assets/images/hero_top.png" alt="App hero top image" class="img-fluid d-block d-md-none mb-3"  height="50px"/>
+            <!-- lg Image -->
+            <img src="assets/images/hero_side.png" alt="App hero side image" class="img-fluid d-none d-md-block" />
+          </div>
+
+          <!-- Text Column -->
+          <div
+            class="col-12 col-md-6 order-2 order-md-1 d-flex flex-column justify-content-end align-items-start text-start">
+            <h1 class="main-head text-white">Message privately</h1>
+            <p class="text-white">
+              Simple, reliable, private messaging and calling for free*,
+              available all over the world.
+            </p>
+            <div class="d-flex gap-2 flex-grow-1 my-4">
+              <button class="btn btn-lg border border-black" type="button">
+                Download <i class="bi bi-chevron-bar-down"></i>
+              </button>
+              <button class="btn btn-lg border border-black btn-white d-none d-sm-block" type="button">
+                Log in <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Session 1 -->
+    <div class="container-md mb-5 d-flex flex-column align-items-center text-center">
+      <!-- Top Image -->
+      <img src="assets/images/session_1_top.png" alt="Top session illustration" class="img-fluid mb-4" />
+
+      <!-- Text Section -->
+      <div class="row w-100">
+        <div class="col-12 px-4">
+          <h2 class="fs-1 fw-normal">
+            With private messaging and calling, you can be yourself, speak
+            freely, and feel close to the most important
+            people in your life—no matter where they are.
+          </h2>
+        </div>
+      </div>
+
+      <!-- Bottom Image -->
+      <img src="assets/images/session_1_bottom.png" alt="Bottom session illustration" class="img-fluid mt-4" />
+    </div>
+
+    <!-- Video Call -->
+    <div class="container-md my-5 p-3">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 p-4">
+          <h1 class="display-4 fw-medium">Never miss a moment with voice and
+            video calls</h1>
+          <p class="fs-6 lh-md">From a group call to classmates to a quick
+            call with mom, feel like you’re in the same
+            room with voice and video calls.</p>
+          <a href="#" class="text-success text-decoration-underline custom-underline-red">Learn
+            more</a>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="col-12 col-md-6 p-4 text-center">
+          <img class="img-fluid" src="assets/images/video_call_img.png" alt="Video call illustration">
+        </div>
+      </div>
+    </div>
+
+    <!-- Speak Freely -->
+    <div class="container-fluid my-5 p-3 speak-freely-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 p-4 text-center">
+          <img class="img-fluid" src="assets/images/Speak_freely_img.png" alt="Speak freely illustration">
+        </div>
+        <div class="col-12 col-md-4 p-4 text-white">
+          <h1 class="display-4 fw-medium">Speak<br><span class="freely">freely</span></h1>
+          <p class="fs-6 lh-md">With end-to-end encryption on WhatsApp, your
+            personal messages and calls are secured
+            with a lock. Only you and the person you're talking to can read or
+            listen to them.</p>
+          <a href="#" class="text-white text-decoration-underline">Learn
+            more</a>
+          <i class="bi bi-chevron-right freely"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group -->
+    <div class="container-md my-5 p-3">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 p-4">
+          <h1 class="display-4 fw-medium">Keep in touch with your groups</h1>
+          <p class="fs-6 lh-md">Whether it's planning an outing with friends
+            or staying on top of family chats, group
+            conversations should feel effortless.</p>
+          <a href="#" class="text-success text-decoration-underline custom-underline-red">Learn
+            more</a>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="col-12 col-md-6 p-4 text-center position-relative">
+          <img class="img-fluid col-8" src="assets/images/group_bg_img.png" alt="Group background">
+          <img class="img-fluid col-8 position-absolute top-50 start-50 translate-middle"
+            src="assets/images/group_img.png" alt="Group foreground">
+        </div>
+      </div>
+    </div>
+
+    <!-- Feel -->
+    <div class="container-md my-5 p-3">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 p-4 text-center position-relative">
+          <img class="img-fluid col-8" src="assets/images/feel_bg_img.png" alt="Feel background">
+          <img class="img-fluid col-8 position-absolute top-50 start-50 translate-middle"
+            src="assets/images/feel_emojies_img.png" alt="Feel emojis">
+        </div>
+        <div class="col-12 col-md-6 p-4">
+          <h1 class="display-4 fw-medium">Say what<br>you feel</h1>
+          <p class="fs-6 lh-md">Express yourself without words. Use stickers
+            and GIFs or share everyday moments on
+            Status. Record a voice message for a quick hello or a longer
+            story.</p>
+          <a href="#" class="text-success text-decoration-underline custom-underline-red">Learn
+            more</a>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business -->
+    <div class="container-md my-5 p-3">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 p-4">
+          <h1 class="display-4 fw-medium">Transform your business</h1>
+          <p class="fs-6 lh-md">WhatsApp Business helps you reach your
+            customers globally to deliver compelling
+            experiences at scale. Showcase your products and services,
+            increase sales, and build relationships—all with
+            WhatsApp.</p>
+          <a href="#" class="text-success text-decoration-underline custom-underline-red">Learn
+            more</a>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="col-12 col-md-6 p-4 text-center">
+          <img class="img-fluid" src="assets/images/business_img.png" alt="Business illustration">
+        </div>
+      </div>
+    </div>
+
+    <section class="update-section container-fluid my 5 py-5 overflow-hidden">
+      <div class="container-md">
+        <div class="row justify-content-between align-items-start gy-5">
+          <!-- Left Text Column -->
+          <div class="col-12 col-lg-4">
+            <h2 class="display-4 fw-medium">Stay up to date</h2>
+            <p class="fs-6 lh-md">
+              Get the latest from WhatsApp: news, useful tips, and our newest
+              features to help you stay connected.
+            </p>
+          </div>
+
+          <!-- Cards Section -->
+          <div class="col-12 col-lg-8">
+            <div class="d-flex flex-nowrap gap-3">
+              <!-- Card 1 -->
+              <div class="card flex-grow-1 bg-white shadow-0 border-0 rounded-5  p-4" style="min-width: 500px;">
+                <div class="card-body d-flex flex-column gap-5 justify-content-between align-items-start">
+                  <div class="card-header bg-transparent border-0"><i class="bi bi-whatsapp h5"></i></div>
+                  <div>
+                    <h2 class="card-title px-2 lh-sm">Catch up on
+                      conversations with Private Message Summaries</h2>
+                    <p class="card-text px-2">We're excited to introduce
+                      Message Summaries, a new option that uses Meta
+                      AI to privately and quickly summarize unread messages in
+                      a chat...</p>
+                  </div>
+                  <a href="#" class="btn btn-light border-1 border-black rounded-pill mx-2">Learn
+                    More</a>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="card flex-grow-1 bg-white shadow-0 border-0 rounded-5 p-4" style="min-width: 500px;">
+                <div class="card-body d-flex flex-column gap-5 justify-content-between align-items-start">
+                  <div class="card-header bg-transparent border-0"><i class="bi bi-whatsapp h5"></i></div>
+                  <div>
+                    <h2 class="card-title px-2 lh-sm">Helping you Find More
+                      Channels and Businesses on WhatsApp</h2>
+                    <p class="card-text px-2">Today we’re introducing some new
+                      features for our Updates tab, which is
+                      home to both Channels and Status...</p>
+                  </div>
+                  <a href="#" class="btn btn-light border-1 border-black rounded-pill mx-2">Learn
+                    More</a>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="card flex-grow-1 bg-white shadow-0 border-0 rounded-5 p-4" style="min-width: 500px;">
+                <div class="card-body d-flex flex-column gap-5 justify-content-between align-items-start">
+                  <div class="card-header bg-transparent border-0"><i class="bi bi-whatsapp h5"></i></div>
+                  <div>
+                    <h2 class="card-title px-2 lh-sm">New Feature Roundup:
+                      Updates to stickers, calls, channels, status
+                      and more</h2>
+                    <p class="card-text px-2">It’s been a busy few months
+                      bringing new features and updates to WhatsApp.
+                      Here’s the latest roundup...</p>
+                  </div>
+                  <a href="#" class="btn btn-light border-1 border-black rounded-pill mx-2">Learn
+                    More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- <footer class="text-light text-center">
+    <div class="container-md">
+      <p class="mb-0">© 2025 WhatsApp LLC All rights reserved.</p>
+      <p class="mb-0">Privacy Policy | Terms of Service</p>
+      <p class="mb-0">Follow us on:
+        <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+      </p>
+    </div>
+  </footer> -->
+
+  <footer class="text-light">
+    <div class="container-md col-xxl-6">
+      <div class="row gy-4">
+        <!-- Logo & Download -->
+        <div class="col-12 col-md-3 d-flex flex-column align-items-between gap-4 text-center px-3">
+          <img src="assets/images/logo_white.svg" alt="WhatsApp Logo" class="d-none d-md-block" style="width: 150px;">
+          <button class="btn btn-success btn-lg rounded-pill">
+            Download <i class="bi bi-chevron-bar-down ps-2"></i>
+          </button>
+          <!-- social media links -->
+          <hr class="d-block d-md-none">
+          <div class="d-flex gap-5 justify-content-center d-md-none ">
+            <a href="/" class="text-light fs-5"><i class="bi bi-twitter-x border border-2 rounded-circle fs-6 p-2"
+                title="Twitter"></i></a>
+            <a href="/" class="text-light fs-5"><i class="bi bi-youtube border border-2 rounded-circle fs-6 p-2"
+                title="YouTube"></i></a>
+            <a href="/" class="text-light fs-5"><i class="bi bi-instagram border border-2 rounded-circle fs-6 p-2"
+                title="Instagram"></i></a>
+            <a href="/" class="text-light fs-5"><i class="bi bi-facebook border border-2 rounded-circle fs-6 p-2"
+                title="Facebook"></i></a>
+          </div>
+          <hr class="d-block d-md-none">
+          <img src="assets/images/logo_white.svg" alt="WhatsApp Logo" class="col-12 d-block d-md-none "
+            style="width: 150px;">
+
+        </div>
+
+        <!-- Link Sections -->
+        <div class="col-6 col-md-2 text-start d-flex flex-column gap-3">
+          <h6 class="fs-6 text-secondary fw-medium">What we do</h6>
+          <ul class="list-unstyled text-start d-flex flex-column gap-3">
+            <li><a href="#" class="text-light text-decoration-none">Features</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Security</a></li>
+            <li><a href="#" class="text-light text-decoration-none">For
+                Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 text-start d-flex flex-column gap-3">
+          <h6 class="fs-6 text-secondary fw-medium">Who we are</h6>
+          <ul class="list-unstyled text-start d-flex flex-column gap-3">
+            <li><a href="#" class="text-light text-decoration-none">About
+                us</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Brand
+                Center</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 text-start d-flex flex-column gap-3">
+          <h6 class="fs-6 text-secondary fw-medium">Use WhatsApp</h6>
+          <ul class="list-unstyled text-start d-flex flex-column gap-3">
+            <li><a href="#" class="text-light text-decoration-none">Android</a></li>
+            <li><a href="#" class="text-light text-decoration-none">iPhone</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Mac/PC</a></li>
+            <li><a href="#" class="text-light text-decoration-none">WhatsApp
+                Web</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 text-start d-flex flex-column gap-3">
+          <h6 class="fs-6 text-secondary fw-medium">Need help?</h6>
+          <ul class="list-unstyled text-start d-flex flex-column gap-3">
+            <li><a href="#" class="text-light text-decoration-none">Contact
+                Us</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Help
+                Center</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Apps</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Security
+                Advisories</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+
+      <!-- Bottom Bar -->
+      <div class="row mt-4 d-flex justify-content-between align-items-center">
+        <!-- Credit & Links -->
+        <div class="col-3 col-md-4 d-flex flex-column-reverse flex-md-row gap-2 text-start">
+          <a href="#" class="text-light text-decoration-none fs-sm credits">2025 ©
+            WhatsApp LLC</a>
+          <a href="#" class="text-light text-decoration-none fs-xs credits">Terms &
+            Privacy Policy</a>
+          <a href="#" class="text-light text-decoration-none fs-xs credits">Sitemap</a>
+        </div>
+
+        <!-- Social Icons (hidden on small screens) -->
+        <div class="col-md-4 d-none d-md-flex gap-4 justify-content-center">
+          <a href="/" class="text-light fs-5">
+            <i class="bi bi-twitter-x border border-2 rounded-circle fs-6 p-2" title="Twitter"></i>
+          </a>
+          <a href="/" class="text-light fs-5">
+            <i class="bi bi-youtube border border-2 rounded-circle fs-6 p-2" title="YouTube"></i>
+          </a>
+          <a href="/" class="text-light fs-5">
+            <i class="bi bi-instagram border border-2 rounded-circle fs-6 p-2" title="Instagram"></i>
+          </a>
+          <a href="/" class="text-light fs-5">
+            <i class="bi bi-facebook border border-2 rounded-circle fs-6 p-2" title="Facebook"></i>
+          </a>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="col-6 col-md text-md-end mt-3 mt-md-0">
+          <button class="btn btn-outline-light bg-transparent text-light btn-lg px-5 dropdown-toggle">
+            English
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="/assets/scripts/main.js"></script>
+</body>
+
+</html>
