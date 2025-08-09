@@ -47,7 +47,7 @@ body {
   margin: 96px 0;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url("/assets/images/hero_img.png");
+  background-image: url("assets/images/hero_img.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
